@@ -4,7 +4,7 @@ pipeline {
 
     agent {
         docker {
-            image 'node'
+            image 'simple_flask-web'
             args '-u root'
         }
     }
