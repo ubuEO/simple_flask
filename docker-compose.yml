@@ -2,5 +2,10 @@ version: "3.9"
 services:
   app:
     build: .
+    image: docker:18.09
+    stage: build
+    services:
+      - docker:18.09-dind
+
     ports:
       - "80:5000"
